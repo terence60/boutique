@@ -1,16 +1,15 @@
 <?php
 
-spl_autoload_register(function($className){
+use Carbon\Carbon;
+use App\Calcul;
 
-    $className = str_replace("App", "classes", $className);
-    var_dump($className);
-    die();
-});
-
+require "vendor/autoload.php";
 require 'classes/calcul.php';
 
-$instance = new App\Calcul();
-$resultat = $instance->additionner(10,20);
+$instance = new Calcul();
+$aujourdhui = carbon::now();
+var_dump($aujourdhui->format('d/m/Y'));
+$resultat = $instance->additionner(20,20);
 
 var_dump($resultat);
 

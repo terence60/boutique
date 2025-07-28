@@ -1,0 +1,17 @@
+{
+    "name": "terencedinguilu/boutique",
+    "autoload": {
+        "psr-4": {
+            "Terencedinguilu\\Boutique\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Terence Dinguilu",
+            "email": "terence.dinguilu@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.10"
+    }
+}
